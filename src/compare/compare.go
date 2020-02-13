@@ -9,4 +9,10 @@ func main() {
 	var minor = age < 18
 
 	fmt.Printf("At age %v, am I a minor? %v\n", age, minor)
+
+	var apple = "apple"
+	var banana = "banana"
+	var greater = apple > banana
+
+	fmt.Printf("is 'apple' greater than 'banana'? %v",greater)
 }
