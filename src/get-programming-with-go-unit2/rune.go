@@ -17,4 +17,12 @@ func main() {
 	fmt.Printf("%c %[1]v\n", smile)
 	acute := 'é'
 	fmt.Printf("%c %[1]v\n", acute)
+
+	message := "shalom"
+	for i:=0; i<6; i++ {
+		c := message[i]
+		fmt.Printf("%c %[1]v\n", c)
+	}
+	// cannot assign to message[5]
+	// message[5] = 'd'
 }
