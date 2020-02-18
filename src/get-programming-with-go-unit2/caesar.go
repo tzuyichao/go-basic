@@ -19,4 +19,14 @@ func main() {
 			fmt.Printf("%c ", i)
 		}
 	}
+	fmt.Println()
+
+	str := "L fdph, L vdz, L frqtxhuhg"
+	for _, ch := range str {
+		if ch != ' ' && ch != ',' {
+		    fmt.Printf("%c", (ch-3))
+	    } else {
+			fmt.Printf("%c", ch)
+		}
+	}
 }
