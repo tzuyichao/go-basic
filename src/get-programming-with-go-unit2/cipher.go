@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-    text := "SEDIGUOQLURTHEGOLHENO"
+    text := "WEDIGYOULUVTHEGOPHERS"
 	keyword := "GOLANG"
 	a := 'A'
 	key_length := len(keyword)
