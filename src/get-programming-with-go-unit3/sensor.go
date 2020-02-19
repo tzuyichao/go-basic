@@ -16,9 +16,13 @@ func realSensor() kelvin {
 }
 
 func main() {
+	var sensor1 func() kelvin
 	sensor := fakeSensor
 	fmt.Println(sensor())
 
 	sensor = realSensor
 	fmt.Println(sensor())
+
+	sensor1 = fakeSensor
+	fmt.Println(sensor1())
 }
