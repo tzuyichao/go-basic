@@ -28,4 +28,18 @@ func main() {
 	neptune := "Neptune"
 	tune := neptune[3:]
 	fmt.Println(tune)
+	neptune = "Poseidon"
+	fmt.Println(tune)
+
+	planets = [...]string {
+		"1",
+		"2",
+		"3",
+		"4",
+		"5",
+		"6",
+		"7",
+		"8",
+	}
+	fmt.Println(terrestrial, gasGiants, iceGiants)
 }
