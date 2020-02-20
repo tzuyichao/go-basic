@@ -24,4 +24,8 @@ func main() {
 	fmt.Println(planets)
 	fmt.Println(iceGiants)
 	fmt.Println(iceGiants2)
+
+	neptune := "Neptune"
+	tune := neptune[3:]
+	fmt.Println(tune)
 }
