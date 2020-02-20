@@ -18,6 +18,7 @@ func main() {
 	iceGiants := planets[6:8]
 
 	fmt.Println(terrestrial, gasGiants, iceGiants)
+	fmt.Printf("type of terrestrial: %T, type of planets: %T\n", terrestrial, planets)
 
 	iceGiants2 := iceGiants
 	iceGiants[1] = "Poseidon"
@@ -28,6 +29,7 @@ func main() {
 	neptune := "Neptune"
 	tune := neptune[3:]
 	fmt.Println(tune)
+	fmt.Printf("type of tune: %T, type of neptune: %T\n", tune, neptune)
 	neptune = "Poseidon"
 	fmt.Println(tune)
 
