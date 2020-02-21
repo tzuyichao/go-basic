@@ -7,6 +7,8 @@ func dump(label string, slice []string) {
 }
 
 func main() {
+	// make(slice type, initial length, capacity)
+	// 如果沒有給inital length, capacity代表兩個一樣
 	dwarfs := make([]string, 0, 10)
 	dump("dwarfs", dwarfs)
 	dwarfs = append(dwarfs, "Ceres", "Pluto", "Haumea", "Makemake", "Eris")
