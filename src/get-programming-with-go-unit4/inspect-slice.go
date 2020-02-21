@@ -30,6 +30,7 @@ func InspectSlice(slice []string) {
 
 func main() {
 	//dwarfs := []string{"Apple", "Orange", "Plum", "Banana", "Grape"}
-	dwarfs := make([]string, 8)
+	dwarfs := make([]string, 0, 5)
+	dwarfs = append(dwarfs, "Apple", "Plum")
 	InspectSlice(dwarfs)
 }
