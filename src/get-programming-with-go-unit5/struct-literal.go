@@ -11,7 +11,9 @@ func main() {
 
 	opportunity := location{lat: -1.9462, long: 354.4734}
 	fmt.Println(opportunity)
+	fmt.Printf("%v\n", opportunity)
 
 	insight := location{4.5, 135.9}
 	fmt.Println(insight)
+	fmt.Printf("%v\n", insight)
 }
