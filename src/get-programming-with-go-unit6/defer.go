@@ -20,6 +20,7 @@ func proverbs(name string) error {
 		return err
 	}
 	_, err = fmt.Fprintln(f, "Don't just check errors, handle them gracefully.")
+	fmt.Println("proverbs completed.")
 	return err
 }
 
