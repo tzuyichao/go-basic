@@ -11,6 +11,9 @@ func proverbs(name string) error {
 		return err
 	}
 	defer f.Close()
+	defer func() {
+		fmt.Println("defer test")
+	}()
 
 	_, err = fmt.Fprintln(f, "Errors are values.")
 	if err != nil {
