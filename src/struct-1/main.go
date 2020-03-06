@@ -13,4 +13,20 @@ func main() {
 	}
 
 	fmt.Println(data)
+
+	datas := []struct {
+		Name string
+	} {
+		{
+			Name: "title1",
+		},
+		{
+			Name: "title2",
+		},
+		{
+			Name: "title3",
+		},
+	}
+
+	fmt.Println(datas)
 }
