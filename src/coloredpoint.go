@@ -18,5 +18,7 @@ func main() {
 	var cp ColoredPoint
 	cp.X = 1
 	cp.Point.Y = 2
+	red := color.RGBA {255, 0, 0, 255}
+	cp.Color = red
 	fmt.Printf("%v\n", cp)
 }
