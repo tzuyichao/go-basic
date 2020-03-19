@@ -15,6 +15,7 @@ func printStats(mem runtime.MemStats) {
 	fmt.Println("-----")
 }
 
+// GODEBUG=gctrace=1 go run gColl.go
 func main() {
 	var mem runtime.MemStats
 	printStats(mem)
