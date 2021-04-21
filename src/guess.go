@@ -23,7 +23,7 @@ func main() {
 	success := false
 	for guesses := 0; guesses < 10; guesses++ {
 		fmt.Println("You have", 10-guesses, "guesses left.")
-		fmt.Print("Make a guess:")
+		fmt.Print("Make a guess: ")
 		input, err := reader.ReadString('\n')
 		if err != nil {
 			log.Fatal(err)
