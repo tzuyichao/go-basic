@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { 
     var amount, total float64
 	amount = paintNeeded(4.2, 3.0)
 	fmt.Printf("%0.2f liters needed\n", amount)
