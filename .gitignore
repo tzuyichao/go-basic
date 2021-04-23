@@ -1,3 +1,2 @@
-bin/gopls.exe
-pkg/mod/cache/lock
-pkg/mod/cache/download/golang.org/x/tools/gopls/@v/v0.6.10.info
+bin/
+pkg/
