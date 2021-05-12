@@ -21,6 +21,6 @@ func main() {
 	content := container.New(layout.NewGridLayout(2), text1, text2, text3)
 
 	myWindow.SetContent(content)
-	myWindow.Resize(fyne.NewSize(100, 100))
+	myWindow.Resize(fyne.NewSize(200, 200))
 	myWindow.ShowAndRun()
 }
