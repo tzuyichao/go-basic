@@ -26,4 +26,4 @@ func main() {
 		s1 += i
 	}
 	log.Printf("Sum: %d\n", s1)
-}
+}	
