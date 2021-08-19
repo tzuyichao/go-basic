@@ -7,6 +7,7 @@ import (
 	"os"
 	"errors"
 	"strings"
+	"strconv"
 )
 
 type txnCategory string
@@ -22,9 +23,9 @@ const (
 )
 
 type transaction struct {
-	id string
+	id int64
 	payee string
-	spent float32
+	spent float64
 	category txnCategory
 }
 
@@ -73,5 +74,19 @@ func main() {
 			continue
 		}
 		fmt.Printf("%s => %v\n", categoryItem, category)
+		idItem := strings.TrimSpace(record[0])
+		var id int64
+		var spent float64
+		id, _ = strconv.ParseInt(idItem, 10, 32)
+		payeeItem := strings.TrimSpace(record[1])
+		spentItem := strings.TrimSpace(record[2])
+		spent, _ = strconv.ParseFloat(spentItem, 32)
+		txn := transaction{
+			id,
+			payeeItem,
+			spent,
+			category,
+		}
+		fmt.Println(txn)
 	}
 }
