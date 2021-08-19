@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"errors"
 	"strings"
 )
 
@@ -27,6 +28,27 @@ type transaction struct {
 	category txnCategory
 }
 
+func mapTxnCategory(categoryItem string) (txnCategory, error) {
+	switch(categoryItem) {
+	case string(fuel):
+		return fuel, nil
+	case string(food):
+		return food, nil
+	case string(mortgage):
+		return mortgage, nil
+	case string(repairs):
+		return repairs, nil
+	case string(insurance):
+		return insurance, nil
+	case string(utilities):
+		return utilities, nil
+	case string(retirement):
+		return retirement, nil
+	default:
+		return "", errors.New("Category not found")
+	}
+}
+
 func main() {
 	file, err := os.Open("bank.csv")
 	if err != nil {
@@ -45,11 +67,10 @@ func main() {
 		}
 		fmt.Println(record[3])
 		categoryItem := strings.Trim(record[3], " ")
-		switch(categoryItem) {
-		case string(fuel):
-			fmt.Println("Got Fuel")
-		default:
-			fmt.Println("Else")
+		category, err := mapTxnCategory(categoryItem)
+		if err != nil {
+			fmt.Println(err)
 		}
+		fmt.Println(category)
 	}
 }
