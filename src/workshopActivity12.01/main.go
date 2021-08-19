@@ -38,7 +38,7 @@ func mapTxnCategory(categoryItem string) (txnCategory, error) {
 		return mortgage, nil
 	case string(repairs):
 		return repairs, nil
-	case string(insurance):
+	case string(insurance), "car insurance", "life insurance":
 		return insurance, nil
 	case string(utilities):
 		return utilities, nil
@@ -65,12 +65,12 @@ func main() {
 			fmt.Println(err)
 			continue
 		}
-		fmt.Println(record[3])
+		
 		categoryItem := strings.Trim(record[3], " ")
 		category, err := mapTxnCategory(categoryItem)
 		if err != nil {
 			fmt.Println(err)
 		}
-		fmt.Println(category)
+		fmt.Printf("%s => %v\n", categoryItem, category)
 	}
 }
