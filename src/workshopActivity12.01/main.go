@@ -45,7 +45,7 @@ func mapTxnCategory(categoryItem string) (txnCategory, error) {
 	case string(retirement):
 		return retirement, nil
 	default:
-		return "", errors.New("Category not found")
+		return "", errors.New(fmt.Sprintf("given %s category not found", categoryItem))
 	}
 }
 
@@ -70,6 +70,7 @@ func main() {
 		category, err := mapTxnCategory(categoryItem)
 		if err != nil {
 			fmt.Println(err)
+			continue
 		}
 		fmt.Printf("%s => %v\n", categoryItem, category)
 	}
