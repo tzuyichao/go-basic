@@ -15,3 +15,5 @@
 - Hands-On Data Structures and Algorithms with Go
 - Graphic Go Algorithms
 - Hands-On High Performance with Go
+- 100 Go Mistakes: How to Avoid Them
+- Build an Orchestrator in Go
