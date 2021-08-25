@@ -13,4 +13,7 @@ func main() {
 	fmt.Println(s2)
 	fmt.Println(s3)
 	fmt.Println(s4)
+	var x int = 65
+	var y = string(x)
+	fmt.Println(y)
 }
