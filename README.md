@@ -17,3 +17,6 @@
 - Hands-On High Performance with Go
 - 100 Go Mistakes: How to Avoid Them
 - Build an Orchestrator in Go
+- Get Programming with Go
+- Go in Practice
+- Go in Action
