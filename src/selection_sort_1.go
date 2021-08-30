@@ -17,9 +17,7 @@ func SelectionSort(src []int) []int {
 			}
 		}
 		if i != minIdx {
-			temp := res[i]
-			res[i] = res[minIdx]
-			res[minIdx] = temp
+			res[i], res[minIdx] = res[minIdx], res[i]
 		}
 	}
 
