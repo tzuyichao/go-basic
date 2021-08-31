@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"fmt"
 )
 
@@ -15,6 +16,7 @@ func modSlice(s []int) {
 		s[idx] = val * 2
 	}
 	s = append(s, 10)
+	log.Println("in mod: ", s)
 }
 
 func main() {
@@ -28,4 +30,9 @@ func main() {
 	s := []int{1, 2, 3}
 	modSlice(s)
 	fmt.Println(s)
+
+	var s2 = make([]int, 0, 10)
+	s2 = append(s2, 1, 2)
+	modSlice(s2)
+	fmt.Println(s2)
 }
