@@ -20,3 +20,4 @@
 - Get Programming with Go
 - Go in Practice
 - Go in Action
+- Powerful Command-Line Applications in Go: Build Fast and Maintainable Tools
