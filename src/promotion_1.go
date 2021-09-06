@@ -20,6 +20,7 @@ type Manager struct {
 
 func (m Manager) FindNewEmployees() []Employee {
 	fmt.Println("Called")
+	return []Employee{}
 }
 
 func main() {
