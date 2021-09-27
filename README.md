@@ -1,6 +1,6 @@
 # go-basic
 
-- Learning Go
+- Learning Go 
 - The Go Workshop
 - Mastering Go
 - Cloud Native Go
@@ -21,5 +21,3 @@
 - Go in Practice
 - Go in Action
 - Powerful Command-Line Applications in Go: Build Fast and Maintainable Tools
-- Hands-on Go Programming: Learn Google's Golang Programming, Data Structures, Error Handling and Concurrency
-- Learning Go Programming: Build ScalableNext-Gen Web Application using Golang
