@@ -1,24 +1,25 @@
 # go-basic
 
-- Learning Go 
-- The Go Workshop
-- Mastering Go |v|
-- Cloud Native Go
-- Building Distributed Applications in Gin |v|
-- Building Cross-Platform GUI Applications with Fyne
-- Black Hat Go
-- Network Programming with Go
-- Distributed Services with Go
-- gRPC: Up and Running
-- Hands-On System Programming with Go |v|
-- Head First Go (中文版)
-- Hands-On Data Structures and Algorithms with Go
-- Graphic Go Algorithms
-- Hands-On High Performance with Go
-- 100 Go Mistakes: How to Avoid Them
-- Build an Orchestrator in Go
-- Get Programming with Go
-- Go in Practice
-- Go in Action
-- Concurrency in Go
-- Powerful Command-Line Applications in Go: Build Fast and Maintainable Tools
+- [x] Learning Go 
+- [x] The Go Workshop
+- [ ] Mastering Go
+- [ ] Cloud Native Go
+- [ ] Building Distributed Applications in Gin
+- [ ] Building Cross-Platform GUI Applications with Fyne
+- [ ] Black Hat Go
+- [ ] Network Programming with Go
+- [ ] Distributed Services with Go
+- [ ] gRPC: Up and Running
+- [ ] Hands-On System Programming with Go
+- [x] Head First Go (中文版)
+- [ ] Hands-On Data Structures and Algorithms with Go
+- [ ] Graphic Go Algorithms
+- [ ] Hands-On High Performance with Go
+- [ ] 100 Go Mistakes: How to Avoid Them
+- [ ] Build an Orchestrator in Go
+- [x] Get Programming with Go
+- [x] Go in Practice
+- [x] Go in Action
+- [ ] Concurrency in Go
+- [ ] Go Brain Teasers: Exercise Your Mind
+- [ ] Powerful Command-Line Applications in Go: Build Fast and Maintainable Tools
