@@ -23,4 +23,10 @@ func main() {
 	}
 	t := s.Fields(str)
 	f("Fields: %v\n", len(t))
+	f("SplitAfter: %s\n", s.SplitAfter("++123++432++", "++"))
+
+	trimFunction := func(c rune) bool {
+		return !unicode.IsLetter(c)
+	}
+	f("TrimFunc: %s\n", s.TrimFunc("123 abc ABC \t", trimFunction))
 }
