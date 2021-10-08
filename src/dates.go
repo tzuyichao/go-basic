@@ -27,5 +27,11 @@ func main() {
 		fmt.Println("Date:", d.Day(), d.Month(), d.Year())
 		fmt.Println("Time:", d.Hour(), d.Minute())
 	}
-	fmt.Println("start: ", start)
+	t := time.Now().Unix()
+	fmt.Println("Epoch time:", t)
+	d = time.Unix(t, 0)
+	fmt.Println("Date:", d.Day(), d.Month(), d.Year())
+	fmt.Println("Time:", d.Hour(), d.Minute())
+	duration := time.Since(start)
+	fmt.Println("Execution time: ", duration)
 }
