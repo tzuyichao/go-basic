@@ -19,10 +19,10 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+	defer data.Body.Close()
 	_, err = io.Copy(os.Stdout, data.Body)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	data.Body.Close()
 }
