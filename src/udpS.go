@@ -37,7 +37,7 @@ func main() {
 	rand.Seed(time.Now().Unix())
 	for {
 		n, addr, err := connect.ReadFromUDP(buffer)
-		fmt.Print(addr.IP.String(), ":", addr.Port, "-> ", string(buffer[0:n-1]))
+		fmt.Print(addr.IP.String(), ":", addr.Port, " -> ", string(buffer[0:n-1]))
 		if strings.TrimSpace(string(buffer[0:n])) == "STOP" {
 			fmt.Println("Exiting UDP Server")
 			return
