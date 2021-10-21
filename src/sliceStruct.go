@@ -21,4 +21,10 @@ func main() {
 	}
 	fmt.Println(S)
 	fmt.Println(len(S))
+	sum := 0
+
+	for _, k := range S {
+		sum += k.Field1
+	}
+	fmt.Println("Sum:", sum)
 }
