@@ -1,5 +1,7 @@
 # go-basic
 
+Golang只是消遣
+
 - [x] Learning Go 
 - [x] The Go Workshop
 - [ ] Mastering Go
