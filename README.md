@@ -1,6 +1,6 @@
 # go-basic
 
-Golang只是消遣
+學Golang只是消遣
 
 - [x] Learning Go 
 - [x] The Go Workshop
