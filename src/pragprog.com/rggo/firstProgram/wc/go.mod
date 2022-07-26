@@ -1,3 +1,3 @@
 module pragprog.com/rggo/firstProgram/wc
 
-go 1.13
+go 1.18
