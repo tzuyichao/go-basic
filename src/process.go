@@ -29,4 +29,11 @@ func main() {
 		}
 		invalid = append(invalid, k)
 	}
+	fmt.Println("#read: ", total, "#ints: ", nInts, "#floats: ", nFloats)
+	if len(invalid) > total {
+		fmt.Println("Too much invalid input: ", len(invalid))
+		for _, s := range invalid {
+			fmt.Println(s)
+		}
+	}
 }
