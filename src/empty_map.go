@@ -7,4 +7,5 @@ import (
 func main() {
     var m map[string]int
 	fmt.Println(m["errors"])
+	fmt.Println(len(m))
 }
