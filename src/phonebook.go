@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"path"
 )
 
 type Entry struct {
@@ -31,7 +32,7 @@ func list() {
 func main() {
 	arguments := os.Args
 	if len(arguments) == 1 {
-		exe := arguments[0]
+		exe := path.Base(arguments[0])
 		fmt.Printf("Usage: %s search|list <arguments>\n", exe)
 		return
 	}
