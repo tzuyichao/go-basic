@@ -6,17 +6,13 @@
 - [x] The Go Workshop
 - [ ] Mastering Go
 - [ ] Cloud Native Go
-- [ ] Building Distributed Applications in Gin
-- [ ] Building Cross-Platform GUI Applications with Fyne
 - [ ] Black Hat Go
 - [ ] Network Programming with Go
 - [ ] Distributed Services with Go
 - [ ] gRPC: Up and Running
 - [ ] Hands-On System Programming with Go
 - [x] Head First Go (中文版)
-- [ ] Hands-On Data Structures and Algorithms with Go
 - [ ] Graphic Go Algorithms
-- [ ] Hands-On High Performance with Go
 - [ ] 100 Go Mistakes: How to Avoid Them
 - [ ] Build an Orchestrator in Go
 - [x] Get Programming with Go
@@ -25,3 +21,5 @@
 - [ ] Concurrency in Go
 - [ ] Go Brain Teasers: Exercise Your Mind
 - [ ] Powerful Command-Line Applications in Go: Build Fast and Maintainable Tools
+- [ ] Generic Data Structures and Algorithms in Go: An Applied Approach Using Concurrency, Genericity and Heuristics
+- [ ] Network Programming with Go Language: Essential Skills for Programming, Using and Securing Networks with Open Source Google Golang
