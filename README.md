@@ -4,6 +4,7 @@
 
 - [x] Learning Go 
 - [x] The Go Workshop
+- [ ] Go System Programming
 - [ ] Mastering Go, third edition
 - [ ] Go for DevOps
 - [ ] Cloud Native Go
