@@ -7,6 +7,7 @@
 - [ ] Go System Programming
 - [ ] Mastering Go, third edition
 - [ ] Go for DevOps
+- [ ] Security with Go
 - [ ] Cloud Native Go
 - [ ] Black Hat Go
 - [ ] Network Programming with Go
