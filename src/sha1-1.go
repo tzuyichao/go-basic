@@ -16,9 +16,14 @@ func CreateSHA1Hash(byteStr []byte) []byte {
     return bytes
 }
 
-func main() {
+func ExecSHA1Hash(txt string) {
     var bytes []byte
-    bytes = CreateSHA1Hash([]byte("Check"))
+    bytes = CreateSHA1Hash([]byte(txt))
     result := fmt.Sprintf("%x", bytes)
-    fmt.Println(result)
+    fmt.Printf("%s: %s\n", txt, result)
+}
+
+func main() {
+	ExecSHA1Hash("Check")
+	ExecSHA1Hash("check")
 }
