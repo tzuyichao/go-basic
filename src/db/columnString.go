@@ -12,7 +12,7 @@ import (
 
 func main() {
 	if len(os.Args) < 6 {
-		fmt.Println("Usage: go run os.Args[0] [host] [user] [password] [database] [tableName]")
+		fmt.Println(fmt.Sprintf("Usage: go run %s [host] [user] [password] [database] [tableName]\n", os.Args[0]))
 		os.Exit(1)
 	}
 	host := os.Args[1]
