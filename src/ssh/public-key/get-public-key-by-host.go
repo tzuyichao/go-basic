@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"os"
 
 	"golang.org/x/crypto/ssh"
 )
@@ -29,8 +30,12 @@ func findPublicKey(knownHostsPath, targetHost string) (*ssh.PublicKey, error) {
 }
 
 func main() {
-	knownHostsPath := "/path/to/your/known_hosts"
-	targetHost := "your_target_host_name_or_ip"
+	if len(os.Args) < 3 {
+		log.Fatalf("Usage: %s <path_to_known_hosts> <target_host>", os.Args[0])
+	}
+
+	knownHostsPath := os.Args[1]
+	targetHost := os.Args[2]
 
 	key, err := findPublicKey(knownHostsPath, targetHost)
 	if err != nil {
