@@ -13,8 +13,13 @@ func main() {
 	file := os.Args[1]
 	info, err := os.Stat(file)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error %v\n", err)
-		os.Exit(1)
+		if os.IsNotExist(err) {
+			fmt.Fprintln(os.Stderr, "File does not exist")
+			os.Exit(1)
+		} else {
+			fmt.Fprintf(os.Stderr, "Error %v\n", err)
+			os.Exit(1)
+		}
 	}
 	fmt.Fprintf(os.Stdout, "File name: %s\n", info.Name())
 	fmt.Fprintf(os.Stdout, "File size: %d\n", info.Size())
