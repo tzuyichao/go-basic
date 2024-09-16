@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	ldapURL := flag.String("url", "ldap://deltaldap.deltaww.com:389", "LDAP Server URL")
+	ldapURL := flag.String("url", "ldap://yourldapserver:389", "LDAP Server URL")
 	bindDN := flag.String("bindDN", "cn=admin,dc=example,dc=com", "Bind DN")
 	password := flag.String("password", "", "Password for the Bind DN")
 	searchBase := flag.String("base", "dc=example,dc=com", "Search base DN")
